@@ -189,10 +189,10 @@ footer p {
 
     .botao {
         margin-top: 20px;
+        margin-bottom: 20px; /* Adicionando margem abaixo do botão */
     }
 
     .botao-transparente {
         display: block;
-        margin-top: 20px; /* Adicionando margem acima do link "Conheça nossa Clínica" */
     }
 }
