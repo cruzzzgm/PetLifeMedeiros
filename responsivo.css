@@ -1,3 +1,4 @@
+/* Resetando as configurações de caixa e definindo a fonte padrão */
 * {
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
@@ -5,10 +6,12 @@
     padding: 0;
 }
 
+/* Definindo a cor do texto principal do corpo */
 body {
     color: #263138;
 }
 
+/* Estilizando o cabeçalho */
 header {
     background-color: #ff9a6c;
     display: flex;
@@ -18,6 +21,7 @@ header {
     flex-direction: column; /* Empilhar itens verticalmente */
 }
 
+/* Estilizando os links do cabeçalho */
 header nav a {
     color: #ffff;
     font-weight: 600;
@@ -26,6 +30,7 @@ header nav a {
     align-self: flex-end; /* Posicionar itens à direita */
 }
 
+/* Estilizando os itens específicos do cabeçalho */
 #inicio,
 #clinica,
 #farmacia,
@@ -33,29 +38,32 @@ header nav a {
     align-self: flex-end; /* Posicionar itens à direita */
 }
 
+/* Definindo a ordem dos itens no cabeçalho */
 #inicio {
-    order: 1; /* Define a ordem dos itens */
+    order: 1;
 }
 
 #clinica {
-    order: 2; /* Define a ordem dos itens */
+    order: 2;
 }
 
 #farmacia {
-    order: 3; /* Define a ordem dos itens */
+    order: 3;
 }
 
 #duvida {
-    order: 4; /* Define a ordem dos itens */
+    order: 4;
 }
 
+/* Adicionando espaçamento entre os itens no cabeçalho */
 #inicio,
 #clinica,
 #farmacia,
 #duvida {
-    margin-top: 10px; /* Adicionar espaçamento entre os itens */
+    margin-top: 10px;
 }
 
+/* Definindo as regras de estilo para telas maiores */
 @media screen and (min-width: 768px) {
     header {
         padding: 20px 80px;
