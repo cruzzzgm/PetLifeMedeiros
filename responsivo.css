@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #263138;
+}
+
+header {
+    background-color: #ff9a6c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header nav a {
+    color: #ffff;
+    font-weight: 600;
+    padding: 16px;
+    text-decoration: none;
+}
+
+#inicio {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 16px;
+}
+
+h1,
+h2 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.paragrafo {
+    line-height: 150%;
+    margin-bottom: 16px;
+}
+
+.botao,
+.botao-transparente {
+    padding: 12px 24px;
+}
+
+.absolute {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -10;
+}
+
+#clinica,
+#farmacia,
+#duvidas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 32px;
+}
+
+#clinica li {
+    margin-bottom: 8px;
+}
+
+#farmacia img {
+    margin: 32px auto;
+}
+
+#farmacia .paragrafo {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.duvida h3 {
+    padding: 16px;
+}
+
+.duvida img {
+    top: 16px;
+    right: 16px;
+}
+
+.duvida .paragrafo {
+    padding: 16px;
+}
+
+footer {
+    background-color: rgba(255, 152, 108, 0.25);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 32px;
+}
+
+footer img,
+footer .titulo {
+    margin-bottom: 16px;
+}
+
+footer nav a {
+    margin-bottom: 8px;
+}
+
+footer p {
+    margin-bottom: 8px;
+}
+
+#copyright {
+    padding: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        padding: 20px 80px;
+    }
+
+    #inicio {
+        flex-direction: row;
+        padding: 24px 80px 128px 80px;
+    }
+
+    h1,
+    h2 {
+        font-size: 32px;
+    }
+
+    .botao,
+    .botao-transparente {
+        padding: 16px 32px;
+    }
+
+    #clinica,
+    #farmacia,
+    #duvidas {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 64px 80px;
+    }
+
+    #clinica li {
+        margin-bottom: 16px;
+    }
+
+    #farmacia img {
+        margin: 64px auto;
+    }
+
+    #farmacia .paragrafo {
+        max-width: 950px;
+        margin: 0 auto;
+    }
+
+    .duvida h3 {
+        padding: 24px;
+    }
+
+    .duvida .paragrafo {
+        padding: 24px;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 64px 80px;
+    }
+}
