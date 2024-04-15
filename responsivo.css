@@ -18,7 +18,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    flex-direction: column; /* Empilhar itens verticalmente */
+    flex-direction: row; /* Colocar itens do cabeçalho em linha */
 }
 
 /* Estilizando os links do cabeçalho */
@@ -27,7 +27,6 @@ header nav a {
     font-weight: 600;
     padding: 16px;
     text-decoration: none;
-    align-self: flex-end; /* Posicionar itens à direita */
 }
 
 /* Estilizando os itens específicos do cabeçalho */
@@ -35,50 +34,32 @@ header nav a {
 #clinica,
 #farmacia,
 #duvida {
-    align-self: flex-end; /* Posicionar itens à direita */
+    margin-left: 20px; /* Adicionar margem entre os itens */
 }
 
-/* Definindo a ordem dos itens no cabeçalho */
-#inicio {
-    order: 1;
+/* Estilizando o conteúdo principal */
+.content {
+    padding: 20px;
 }
 
-#clinica {
-    order: 2;
-}
-
-#farmacia {
-    order: 3;
-}
-
-#duvida {
-    order: 4;
-}
-
-/* Adicionando espaçamento entre os itens no cabeçalho */
-#inicio,
-#clinica,
-#farmacia,
-#duvida {
-    margin-top: 10px;
+/* Estilizando o rodapé */
+footer {
+    background-color: rgba(255, 152, 108, 0.25);
+    padding: 20px;
 }
 
 /* Definindo as regras de estilo para telas maiores */
 @media screen and (min-width: 768px) {
     header {
-        padding: 20px 80px;
-        flex-direction: row; /* Voltar ao layout em linha */
+        flex-direction: column; /* Empilhar itens verticalmente */
+        align-items: flex-end; /* Alinhar itens do cabeçalho à direita */
     }
 
-    header nav a {
-        align-self: auto; /* Resetar o alinhamento */
-        margin-left: 20px; /* Adicionar margem entre os itens */
-    }
-
+    /* Resetar a margem dos itens específicos do cabeçalho */
     #inicio,
     #clinica,
     #farmacia,
     #duvida {
-        margin-top: 0; /* Resetar o espaçamento */
+        margin-left: 0;
     }
 }
