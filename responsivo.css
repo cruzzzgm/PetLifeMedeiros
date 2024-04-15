@@ -30,6 +30,8 @@ header nav a {
     flex-direction: column;
     gap: 20px;
     padding: 16px;
+    max-width: 100%; /* Adicionando largura máxima */
+    overflow-x: hidden; /* Ocultando o overflow horizontal */
 }
 
 h1,
@@ -65,19 +67,23 @@ h2 {
     align-items: center;
     gap: 20px;
     padding: 32px;
+    max-width: 100%; /* Adicionando largura máxima */
+    overflow-x: hidden; /* Ocultando o overflow horizontal */
 }
 
 #clinica li {
     margin-bottom: 8px;
 }
 
-#farmacia img {
+#farmacia img,
+#duvidas img {
     max-width: 100%;
     height: auto;
     margin: 0 auto;
 }
 
-#farmacia .paragrafo {
+#farmacia .paragrafo,
+#duvidas .paragrafo {
     max-width: 100%;
     margin: 0 auto;
 }
@@ -149,11 +155,13 @@ footer p {
         padding: 64px 80px;
     }
 
-    #farmacia img {
+    #farmacia img,
+    #duvidas img {
         margin: 0;
     }
 
-    #farmacia .paragrafo {
+    #farmacia .paragrafo,
+    #duvidas .paragrafo {
         max-width: 950px;
         margin: 0 auto;
     }
