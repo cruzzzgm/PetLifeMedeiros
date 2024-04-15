@@ -71,13 +71,16 @@ h2 {
     margin-bottom: 8px;
 }
 
-#farmacia img {
+#farmacia img,
+#duvidas img {
     max-width: 100%;
     height: auto;
     margin: 0 auto;
+    max-height: 300px; /* Definindo limite de altura */
 }
 
-#farmacia .paragrafo {
+#farmacia .paragrafo,
+#duvidas .paragrafo {
     max-width: 100%;
     margin: 0 auto;
 }
@@ -149,11 +152,13 @@ footer p {
         padding: 64px 80px;
     }
 
-    #farmacia img {
+    #farmacia img,
+    #duvidas img {
         margin: 0;
     }
 
-    #farmacia .paragrafo {
+    #farmacia .paragrafo,
+    #duvidas .paragrafo {
         max-width: 950px;
         margin: 0 auto;
     }
@@ -170,5 +175,20 @@ footer p {
         flex-direction: row;
         justify-content: space-between;
         padding: 64px 80px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #inicio {
+        text-align: center; /* Centralizar conteúdo no dispositivo móvel */
+    }
+
+    .botao {
+        margin-top: 20px; /* Adicionar margem acima do botão "Agendar Consulta" */
+    }
+
+    .botao-transparente {
+        display: block;
+        text-align: center;
     }
 }
