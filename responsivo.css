@@ -72,7 +72,9 @@ h2 {
 }
 
 #farmacia img {
-    margin: 32px auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
 }
 
 #farmacia .paragrafo {
@@ -147,12 +149,8 @@ footer p {
         padding: 64px 80px;
     }
 
-    #clinica li {
-        margin-bottom: 16px;
-    }
-
     #farmacia img {
-        margin: 64px auto;
+        margin: 0;
     }
 
     #farmacia .paragrafo {
