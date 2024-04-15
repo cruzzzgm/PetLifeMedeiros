@@ -30,8 +30,8 @@ header nav a {
     flex-direction: column;
     gap: 20px;
     padding: 16px;
-    max-width: 100%; /* Adicionando largura máxima */
-    overflow-x: hidden; /* Ocultando o overflow horizontal */
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 h1,
@@ -67,8 +67,8 @@ h2 {
     align-items: center;
     gap: 20px;
     padding: 32px;
-    max-width: 100%; /* Adicionando largura máxima */
-    overflow-x: hidden; /* Ocultando o overflow horizontal */
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 #clinica li {
@@ -178,5 +178,21 @@ footer p {
         flex-direction: row;
         justify-content: space-between;
         padding: 64px 80px;
+    }
+}
+
+/* Centralizando o botão "Agendar Consulta" no meio da tela do dispositivo móvel */
+@media screen and (max-width: 767px) {
+    #inicio {
+        text-align: center;
+    }
+
+    .botao {
+        margin-top: 20px;
+    }
+
+    .botao-transparente {
+        display: block;
+        margin-top: 20px; /* Adicionando margem acima do link "Conheça nossa Clínica" */
     }
 }
